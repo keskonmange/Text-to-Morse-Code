@@ -49,10 +49,10 @@ def text_to_morse_code(text):
         " ": " "
     }
     text = text.lower()
-    encoded_text = []
+    encoded_text = ""
     for letter in text:
-        encoded_text.append(morse_code[letter])
-    return ' '.join(encoded_text)
+        encoded_text += f"{morse_code[letter]} "
+    return encoded_text
 
 
 print("\n*** WELCOME TO TEXT TO MORSE CODE CONVERTER! ***\n")
